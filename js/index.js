@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||李炎明|❤祝❤|贝丹雅|生日|快乐|笑口常开|好运|自然来|❤❤❤|爱你|#rectangle|');
+      S.UI.simulate('|#countdown 3||李炎明|❤祝❤|贝丹雅|生日|快乐|笑口常开|好运|自然来|❤❤❤|爱❤你|农历|2022年7月16日|#rectangle|');
     }
 
     S.Drawing.loop(function () {
