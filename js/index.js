@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||李炎明|❤祝❤|贝丹雅|生日|快乐|笑口常开|好运|自然来|❤❤❤|爱❤你|农历|2022年7月16日|#rectangle|');
+      S.UI.simulate('|#countdown 3||李炎明|❤祝❤|贝丹雅|生日|快乐|笑口常开|好运|自然来|❤❤❤|爱❤你|农历|二零二二年|七月|十六日|#rectangle|');
     }
 
     S.Drawing.loop(function () {
@@ -206,7 +206,7 @@ S.UI = (function () {
         default:
           S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
       }
-    }, 4500, sequence.length);
+    }, 5000, sequence.length);
   }
 
   function checkInputWidth(e) {
